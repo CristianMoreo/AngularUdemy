@@ -1,0 +1,5 @@
+.main-content {
+    margin-left: 220px; /* Ancho de la barra de navegación más un margen adicional */
+    padding: 20px;
+    box-sizing: border-box;
+  }
