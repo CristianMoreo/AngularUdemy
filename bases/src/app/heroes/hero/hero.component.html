@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Spiderma</h1>
+
+
+    <dl>
+        <td>Nombre:</td>
+        <dd>{{name}}</dd>
+        
+        <td>Edad:</td>
+        <dd>{{age}}</dd>
+        
+        <td>Metodo:</td>
+        <dd>Nombre:</dd>
+        
+        <td>Capitalizado:</td>
+        <dd></dd>
+        
+        <td>Funcion:</td>
+        <dd>{{getHeroDescription()}}</dd>
+
+    </dl>
+    <div>
+        <button 
+            *ngIf="name !== 'Spiderman'"
+            (click)="changeAge()" class="btn btn-primary"> Cambiar Nombre</button>
+        <button *ngIf="age == 45"
+            (click)="changeName()" class="btn btn-danger"> Cambiar Edad </button>
+    </div>
+</div>
