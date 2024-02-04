@@ -9,5 +9,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
+  public title:string = 'bases';
+  public counter:number = 0;
+
+  incrementarBy():void{
+    this.counter++;
+  }
 }
