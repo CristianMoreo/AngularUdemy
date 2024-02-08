@@ -11,23 +11,30 @@ export class AddCharacterComponent {
   public character:Character = {
     name:'',
     power:0
-  }
+  };
 
   @Output()
   public onNewCharacter:EventEmitter<Character> = new EventEmitter();
 
-  
-
   emitCharacter():void{
+
+    const val = this.character;
     console.log(this.character);
     
     if (this.character.name.length === 0) return;
 
-    this.onNewCharacter.emit(this.character);
+    console.log(' antes del emit ', val);
+    
+    this.onNewCharacter.emit(val);
 
-    this.character.name = '';
-    this.character.power = 0;
+
+    console.log(' despues del emit ', val);
+    this.character = {
+      name:'',
+      power:0
+    };
     
   }
+  
 
 }
