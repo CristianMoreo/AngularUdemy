@@ -3,6 +3,6 @@
     <hr class="text-white">
 
     <div class="list-group list-reset">
-        <button class="list-group list-grupo-item-action p-2">Valorant</button>
+        <button *ngFor=" let item of tagHistoris" class="list-group list-grupo-item-action p-2">{{item}}</button>
     </div>
 </div>
