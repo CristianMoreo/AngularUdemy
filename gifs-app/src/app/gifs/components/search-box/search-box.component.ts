@@ -14,9 +14,9 @@ import { GifsService } from '../../services/gifs.service';
 export class SearchBoxComponent {
   constructor(private gifsService: GifsService ){ }
   // Info: Es la forma como puedo capturar la informacion del input de arriba
-  @ViewChild('txtTagInput')
   // Se crea una propiedad donde con el signo ! se especifica que no puede ser nula y con el ElementRef
   // se especifica que es de tipo Input 
+  @ViewChild('txtTagInput')
   public tagInput!: ElementRef<HTMLInputElement>;
 
   searchTag(){
