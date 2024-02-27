@@ -21,8 +21,7 @@ export class SearchBoxComponent {
 
   searchTag(){
     // Se captura el value del elemento tagInput
-    const newTag = this.tagInput.nativeElement.value
-    console.log({newTag});
+    const newTag = this.tagInput.nativeElement.value;
     // Se hace el llamado al servicio que adiciona el valor que tenga el input al array 
     this.gifsService.searchtag(newTag);
 

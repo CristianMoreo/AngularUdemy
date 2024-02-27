@@ -41,7 +41,6 @@ export class GifsService {
       return;
     }
     this._tagHistory = JSON.parse( localStorage.getItem('history')! );
-    console.log(this._tagHistory);
     
     this.searchtag(this._tagHistory[0])
   }

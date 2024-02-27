@@ -1,17 +1,22 @@
 <div class="row">
+
+    <gifs-card
+        *ngFor="let item of gifList"
+        [gif]="item"
+        class="col-md-3 col-sm-6"
+    ></gifs-card>
+    <!-- <div class="card-body">
+        <img [src]="element.images.downsized_medium.url"
+            [alt]="element.title"
+            class="card-img-top">
+        <p class="card-text text-white">
+            {{element.title}}
+        </p>
+        
+    </div> -->
+
     <div *ngFor="let element of gifList" class="col-md-3 col-sm-6 mt-3">
-        <div class="card text-center bg-dark">
-            <!-- TODO: Crear Imagen  -->
-            <div class="card-body">
-                <img [src]="element.images.downsized_medium.url"
-                    [alt]="element.title"
-                    class="card-img-top">
-                <p class="card-text text-white">
-                    {{element.title}}
-                </p>
-                
-            </div>
-        </div>
+        
 
     </div>
     

@@ -10,9 +10,7 @@ import { Gif } from '../../services/interfaces/gifs.interfaces';
 export class HomePageComponent {
   constructor ( private gifService : GifsService){}
 
-  get gifs(): Gif[]{
-    console.log(this.gifService.gifList);
-    
+  get gifs(): Gif[]{    
     //Se retorna lo que retorne la la variable gifList que esta en el servicio gifService
     return this.gifService.gifList;
   }
